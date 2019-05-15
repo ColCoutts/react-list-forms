@@ -28,7 +28,7 @@ export default class TextFormatter extends PureComponent {
   render() {
     const { text, formattedText, font, color } = this.state;
 
-    const fontOptions = ['Bright', 'Banner', 'Avatar', 'Alligator', 'Cards', 'Catwalk'].map(font => {
+    const fontOptions = ['Bright', 'Banner', 'Avatar', 'Nipples', 'Cards', 'Catwalk', 'Colossal'].map(font => {
       return <option key={font} value={font}>{font}</option>;
     });
 
@@ -37,7 +37,7 @@ export default class TextFormatter extends PureComponent {
         <select name="font" value={font} onChange={this.handleChange}>{fontOptions}</select>
         <input name="text" value={text} onChange={this.handleChange}></input>
         <input name="color" type="color" value={color} onChange={this.handleChange}></input>
-        <h1 style={{ color }}>{formattedText}</h1>
+        <pre style={{ color }}>{formattedText}</pre>
       </>
     );
   }

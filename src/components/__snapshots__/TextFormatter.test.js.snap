@@ -2,6 +2,54 @@
 
 exports[`textFormatter component renders a snapshot 1`] = `
 <Fragment>
+  <select
+    name="font"
+    onChange={[Function]}
+    value="Banner"
+  >
+    <option
+      key="Bright"
+      value="Bright"
+    >
+      Bright
+    </option>
+    <option
+      key="Banner"
+      value="Banner"
+    >
+      Banner
+    </option>
+    <option
+      key="Avatar"
+      value="Avatar"
+    >
+      Avatar
+    </option>
+    <option
+      key="Nipples"
+      value="Nipples"
+    >
+      Nipples
+    </option>
+    <option
+      key="Cards"
+      value="Cards"
+    >
+      Cards
+    </option>
+    <option
+      key="Catwalk"
+      value="Catwalk"
+    >
+      Catwalk
+    </option>
+    <option
+      key="Colossal"
+      value="Colossal"
+    >
+      Colossal
+    </option>
+  </select>
   <input
     name="text"
     onChange={[Function]}
@@ -13,7 +61,7 @@ exports[`textFormatter component renders a snapshot 1`] = `
     type="color"
     value="black"
   />
-  <h1
+  <pre
     style={
       Object {
         "color": "black",
