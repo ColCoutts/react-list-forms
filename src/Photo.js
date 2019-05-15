@@ -6,7 +6,7 @@ function Photo({ photo }) {
   return <img src={photo} />;
 }
 
-Photo.PropTypes = {
+Photo.propTypes = {
   photo: PropTypes.string.isRequired
 };
 

@@ -19,7 +19,7 @@ function Photos({ photos }) {
   );
 }
 
-Photos.PropTypes = {
+Photos.propTypes = {
   photos: PropTypes.array.isRequired
 };  
 

@@ -13,7 +13,7 @@ function PhotoAlbum({ title, photos }) {
   );
 }
 
-PhotoAlbum.PropTypes = {
+PhotoAlbum.propTypes = {
   title: PropTypes.string,
   photos: PropTypes.array.isRequired
 };
