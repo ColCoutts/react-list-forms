@@ -9,4 +9,20 @@ export default class ErrorBoundary extends Component {
   state = {
     error: false
   }
+
+  static getDerivedStateFromError() {
+    return { error: true };
+  }
+
+  componentDidCatch(error) {
+    console.error(error);
+  }
+
+  render() {
+    if(this.state.error) {
+      return <h3>ERROR</h3>;
+    }
+
+    return this.props.children;
+  }
 }
