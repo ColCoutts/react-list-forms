@@ -8,7 +8,11 @@ export default class CreateColor extends PureComponent {
 
   state = {
     name: '',
-    color: ''
+    color: '#000000'
+  }
+
+  addColor = ({ name, color }) => {
+    this.setState({ name, hex: color });
   }
 
   handleSubmit = event => {
@@ -19,15 +23,15 @@ export default class CreateColor extends PureComponent {
   }
 
   handleChange = ({ target }) => {
-    this.setState = ({ [target.name]: target.value });
+    this.setState({ [target.name]: target.value });
   }
 
   render() {
     const { color, name } = this.state;
     return (
       <form onSubmit={this.handleSubmit}>
-        <input name="name" type="text" value={name} onChange={this.handleChange}></input>
-        <input name="color" type="text" value={color} onChange={this.handleChange}></input>
+        <input name="name" type="text" value={name} onChange={this.handleChange} />
+        <input name="color" type="text" value={color} onChange={this.handleChange} />
         <button>ADD COLORS</button>
       </form>
     );
